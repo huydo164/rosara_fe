@@ -25,3 +25,20 @@ $(document).ready(function () {
         slideShow(slideIndex = n)
     }
 })
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        var menu = document.querySelectorAll('header#wrapp-header');
+        var menu = menu[0];
+        var chieucao = pageYOffset;
+        if (chieucao  > 100){
+            menu.classList.add("bg-menu")
+        }
+        else{
+            menu.classList.remove('bg-menu');
+        }
+    })
+})
+
+
+
+

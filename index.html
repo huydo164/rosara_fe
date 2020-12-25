@@ -10,11 +10,9 @@
     <link media="all" type="text/css" rel="stylesheet" href="css/site.css" />
 
     <!-----javascript------>
-    <script src="js/jquery.2.1.1.min.js"></script>
-    <script src="js/site.js"></script>
 </head>
 <body>
-<header id="wrapp-header">
+<header id="wrapp-header" class="">
     <div class="container">
         <nav class="menu-header">
             <section class="logo">
@@ -22,7 +20,7 @@
                     <img src="./img/logl.png" alt="">
                 </a>
             </section>
-            <section class="list">
+                <section class="list">
                 <ul>
                     <li><a href="">Hàng mới về</a></li>
                     <li><a href="">Sản phẩm</a></li>
@@ -87,7 +85,7 @@
             <p class="upp">Hot</p>
             <p>Ưu đãi mỗi tuần</p>
         </div>
-        <div class="box-colo">
+        <div class="box-color">
             <span class="cb1"></span>
             <span class="cb2"></span>
             <span class="cb3"></span>
@@ -98,25 +96,31 @@
                 <ul>
                     <li class="rosara">rosara.vn</li>
                     <li>
-                        <div class="bg-mo"></div>
-                        <a href=""><img src="./img/anh1.png" alt=""></a>
-                        <p>Sale 50% </p>
+                        <a href="">
+                            <div class="bg-mo"></div>
+                            <img src="./img/anh1.png" alt="">
+                            <p>Sale 50% </p>
+                        </a>
                     </li>
                     <li>
-                        <div class="bg-mo"></div>
-                        <a href=""><img src="./img/anh2.png" alt=""></a>
-                        <p>Freeship </p>
+                        <a href="">
+                            <div class="bg-mo"></div>
+                            <img src="./img/anh2.png" alt="">
+                            <p>Freeship </p>
+                        </a>
                     </li>
                     <li>
-                        <div class="bg-mo"></div>
-                        <a href=""><img src="./img/anh3.png" alt=""></a>
-                        <p class="not-pd">Chương trình tháng </p>
+                        <a href="">
+                            <div class="bg-mo"></div>
+                            <img src="./img/anh3.png" alt="">
+                            <p class="not-pd">Chương trình tháng </p>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="box2 ">
+    <section class="box2">
         <div class="mo2"></div>
         <div class="container">
             <p class="title-box2">Top sản phẩm hot</p>
@@ -181,7 +185,9 @@
             </li>
             <li>
                 <h3>Đăng ký nhận tin</h3>
-                <a href="" class="mail">Nhập email của bạn</a>
+                <form action="#" method="post">
+                    <input type="email" class="mail" placeholder="Nhập email của bạn">
+                </form>
                 <p>Hãy nhập email của bạn vào đây để nhận tin!</p>
                 <p class="connect">Kết nối ngay với ROSARA</p>
                 <img src="./img/insta.png" alt="">
@@ -197,4 +203,6 @@
     </section>
 </footer>
 </body>
+<script src="js/jquery.2.1.1.min.js"></script>
+<script src="js/site.js"></script>
 </html>
