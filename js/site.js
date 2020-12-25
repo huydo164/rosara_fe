@@ -1,28 +1,27 @@
 $(document).ready(function () {
-    var currentImage = 1;
-    var totalImage = 2;
-    $('.icon-pre').on('click', function () {
-        $('#im_' + currentImage).stop().fadeOut(1);
-        decreaseImage();
-        $('#im_' + currentImage).stop().fadeIn(1);
-    })
-    $('.icon-next').on('click', function () {
-        $('#im_' + currentImage).stop().fadeOut(1);
-        increaseImage();
-        $('#im_' + currentImage).stop().fadeIn(1);
-    })
-    
-    function increaseImage() {
-        ++currentImage;
-        if (currentImage > totalImage){
-            currentImage = 1;
+    var slideIndex;
+
+    function slideShow() {
+        var i ;
+        var slide = document.getElementsByClassName("slide-show");
+        var dot = document.getElementsByClassName("dot");
+        for (i = 0; i < slide.length; i++){
+            slide[i].style.display = "none";
         }
+        for (i = 0; i < dot.length; i++){
+            dot[i].className = dot[i].className.replace(" active", "");
+        }
+        slide[slideIndex].style.display = "block";
+        dot[slideIndex].className += " active";
+        slideIndex++
+        if (slideIndex > slide.length - 1){
+            slideIndex = 0;
+        }
+        setTimeout(slideShow, 5000);
     }
-    
-    function decreaseImage() {
-        --currentImage;
-        if (currentImage < 1){
-            currentImage = totalImage;
-        }
+    slideShow(slideIndex = 0);
+
+    function currentSlide(n) {
+        slideShow(slideIndex = n)
     }
 })
