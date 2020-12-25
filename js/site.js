@@ -17,8 +17,8 @@ function slideShow() {
     if (slideIndex > slide.length - 1){
         slideIndex = 0;
     }
-    setTimeout(slideShow, 5000);
 }
+setInterval(slideShow, 5000);
 slideShow(slideIndex = 0);
 
 function currentSlide(n){

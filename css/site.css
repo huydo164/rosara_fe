@@ -8,13 +8,6 @@
 body{
     background: #8c8c8c;
 }
-@font-face{font-family: "Roboto-Light"; src: url("./font/Roboto-Light.otf") format("truetype");}
-@font-face {
-    font-family: "GalileoFLF-Bold"; src: url("./font/GalileoFLF-Bold.otf") format("truetype");
-}
-@font-face {
-    font-family: "Brandon_bld"; src: url("./font/Brandon_bld.otf") format("truetype");
-}
 .container{
     margin: 0 auto;
     width: 1300px
@@ -65,7 +58,6 @@ section.list ul li  a{
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-    font-family: "Roboto-Light";
     padding: 20px 0;
     display: block;
     height: 100%;
@@ -112,7 +104,6 @@ section#wrap-banner .best{
     left: 46%;
     font-size: 182px;
     color: #fff;
-    font-family: "GalileoFLF-Bold";
 }
 section#wrap-banner .slide{
     display: inline-block;
@@ -135,13 +126,11 @@ section#wrap-banner .slide .slide-show .text{
     color: #fff;
 }
 section#wrap-banner .slide .slide-show .text p{
-    font-family: "Roboto-Light";
     letter-spacing: 2px;
 }
 section#wrap-banner .slide .slide-show .text .bold{
     font-size: 50px;
     font-weight: bold;
-    font-family: "GalileoFLF-Bold";
 }
 section#wrap-banner .slide .icon-click{
     position: absolute;
@@ -210,69 +199,68 @@ section#wrap-banner .slide .fade {
     background: #ffffff;
     padding: 130px 0;
 }
-section.box1 .gach{
+section#box1 .gach{
     height: 1px;
     width: 26%;
     background: #000;
     margin-bottom: 100px;
 }
-section.box1{
+section#box1{
     margin-bottom: 178px;
     position: relative;
 }
-section.box1 .title-box1{
+section#box1 .title-box1{
     float: left;
     margin-left: 182px;
     line-height: 40px;
 }
-section.box1 .box-color{
+section#box1 .box-color{
     float: right;
 }
-section.box1 .box-color span{
+section#box1 .box-color span{
     width: 49px;
     height: 49px;
     display: inline-block;
     margin-right: 11px;
 }
-section.box1 .box-color .cb1{
+section#box1 .box-color .cb1{
     background: #f5f5f5;
 }
-section.box1 .box-color .cb2{
+section#box1 .box-color .cb2{
     background: #e0e0e0;
 }
-section.box1 .box-color .cb3{
+section#box1 .box-color .cb3{
     background: #cbcbcb;
 }
-section.box1 .title-box1 p{
+section#box1 .title-box1 p{
     font-size: 18px;
     font-weight: bold;
-    font-family: "Brandon_bld";
 }
-section.box1 .title-box1 .upp{
+section#box1 .title-box1 .upp{
     font-size: 53px;
     text-transform: uppercase;
 }
-section.box1 .content-box1{
+section#box1 .content-box1{
     clear: both;
     position: relative;
 }
-section.box1 .content-box1 .list-img{
+section#box1 .content-box1 .list-img{
     position: relative;
     z-index: 9999;
     padding-top: 34px;
 }
-section.box1 .content-box1 .list-img ul li{
+section#box1 .content-box1 .list-img ul li{
     display: inline-block;
     margin-right: 90px;
     position: relative;
 }
-section.box1 .content-box1 .list-img ul li:last-child{
+section#box1 .content-box1 .list-img ul li:last-child{
     margin-right: 0;
 }
-section.box1 .content-box1 .list-img ul li a p.not-pd{
+section#box1 .content-box1 .list-img ul li a p.not-pd{
     padding-top: 0;
 }
-section.box1 .content-box1 .list-img ul li a p{
+section#box1 .content-box1 .list-img ul li a p{
     position: absolute;
     border: 2px solid #fff;
     width: 57%;
@@ -284,21 +272,19 @@ section.box1 .content-box1 .list-img ul li a p{
     font-weight: bold;
     color: #fff;
     left: 23%;
-    font-family: "Brandon_bld";
     transition: all .2s ease-in;
 }
-section.box1 .content-box1 .list-img ul li a p:hover{
+section#box1 .content-box1 .list-img ul li a p:hover{
     background: #ffffff;
     color: #000;
 }
-section.box1 .content-box1 .list-img ul li.rosara{
+section#box1 .content-box1 .list-img ul li.rosara{
     text-transform: uppercase;
     position: relative;
     transform: rotate(-90deg);
     bottom: 144px;
-    font-family: "Brandon_bld";
 }
-section.box1 .content-box1 .list-img ul li.rosara::before{
+section#box1 .content-box1 .list-img ul li.rosara::before{
     content: '';
     position: absolute;
     display: inline-block;
@@ -308,7 +294,7 @@ section.box1 .content-box1 .list-img ul li.rosara::before{
     bottom: 10px;
     right: -48px;
 }
-section.box1 .content-box1 .list-img ul li.rosara::after{
+section#box1 .content-box1 .list-img ul li.rosara::after{
     content: '';
     position: absolute;
     display: block;
@@ -318,7 +304,7 @@ section.box1 .content-box1 .list-img ul li.rosara::after{
     top: 10px;
     right: 115px;
 }
-section.box1 .mo{
+section#box1 .mo{
     background: #f0f0f0;
     position: absolute;
     width: 88%;
@@ -326,7 +312,7 @@ section.box1 .mo{
     left: -35%;
     top: 30%;
 }
-section.box1 .content-box1 .list-img ul li a .bg-mo{
+section#box1 .content-box1 .list-img ul li a .bg-mo{
     position: absolute;
     top: 0;
     width: 100%;
@@ -336,52 +322,50 @@ section.box1 .content-box1 .list-img ul li a .bg-mo{
 }
 
 /*============box 2 =============*/
-.box2{
+#box2{
     position: relative;
 }
-section.box2 .title-box2{
+section#box2 .title-box2{
     border-top: 1px solid;
     text-align: center;
     margin: 0 34% 40px 34%;
     font-weight: bold;
     font-size: 22px;
     line-height: 40px;
-    font-family: "Brandon_bld";
 }
-section.box2 .mo2{
+section#box2 .mo2{
     position: absolute;
     width: 100%;
     height: 63%;
     background: #f0f0f0;
     top: 28%;
 }
-section.box2 .content-box2{
+section#box2 .content-box2{
     position: relative;
 }
-section.box2 .content-box2 ul li{
+section#box2 .content-box2 ul li{
     display: inline-block;
     margin-right: 93px;
 }
-section.box2 .content-box2 .list-box2 ul li:last-child{
+section#box2 .content-box2 .list-box2 ul li:last-child{
     margin-right: 0;
 }
-section.box2 .content-box2 .list-box2 ul li a .detail{
+section#box2 .content-box2 .list-box2 ul li a .detail{
     text-align: center;
     border: 1px solid #000;
     padding: 5px 0px;
     font-weight: bold;
     margin-top: 8px;
-    font-family: "Brandon_bld";
     transition: all .2s ease-in;
 }
-section.box2 .content-box2 .list-box2 ul li a .detail:hover{
+section#box2 .content-box2 .list-box2 ul li a .detail:hover{
     background: #000;
     color: #ffffff;
 }
-section.box2 .content-box2 .list-box2 ul li a{
+section#box2 .content-box2 .list-box2 ul li a{
     color: #000000;
 }
-section.box2 .content-box2  .show-more{
+section#box2 .content-box2  .show-more{
     background: #3d3d3d;
     color: #fff;
     font-weight: bold;
@@ -389,12 +373,11 @@ section.box2 .content-box2  .show-more{
     text-align: center;
     margin: 69px 40% 0 40%;
     padding: 4px 0;
-    font-family: "Brandon_bld";
     display: block;
     transition: all .2s ease-in;
     border: 1px solid rgba(0,0,0,0);
 }
-section.box2 .content-box2  .show-more:hover{
+section#box2 .content-box2  .show-more:hover{
     border: 1px solid #3d3d3d;
     background: none;
     color: #000000;
@@ -404,7 +387,6 @@ section.box2 .content-box2  .show-more:hover{
 #wrapp-footer{
     background: #565656;
     padding-top: 80px;
-    font-family: "Roboto-Light";
 }
 ul.list-ft{
     margin-bottom: 27px;
@@ -457,7 +439,7 @@ ul.list-ft li .connect{
 ul.list-ft li img{
     margin-left: 13px;
 }
-.copy{
+#copy{
     background: #3d3d3d;
     text-align: center;
     color: #ffffff;
