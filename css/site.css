@@ -5,9 +5,12 @@
     list-style: none;
     text-decoration: none;
 }
+
 body{
     background: #8c8c8c;
+    font-family: Roboto-Light;
 }
+@font-face{font-family: "Roboto-Light"; src: url("./font/Roboto-Light.otf") format("truetype");}
 .container{
     margin: 0 auto;
     width: 1300px
@@ -41,6 +44,7 @@ header#wrapp-header.bg-menu{
 }
 .logo{
     margin-right: 31%;
+    padding-top: 6px;
 }
 .list{
     flex-grow: 1;
@@ -61,6 +65,9 @@ section.list ul li  a{
     padding: 20px 0;
     display: block;
     height: 100%;
+}
+section.color-text-black ul li a{
+    color: #000000;
 }
 section.list ul li:hover .sub-menu{
     display: block;
@@ -83,6 +90,7 @@ section.list ul li .sub-menu li a{
     border-bottom: 2px solid rgba(0,0,0,0);
     transition: all .2s ease-in;
 }
+
 section.list ul li .sub-menu li a:hover{
     border-bottom: 2px solid #fff;
 }
@@ -343,14 +351,14 @@ section#box2 .mo2{
 section#box2 .content-box2{
     position: relative;
 }
-section#box2 .content-box2 ul li{
+section#box2 .content-box2 ul li, section#box4 .list-box2 ul li{
     display: inline-block;
     margin-right: 93px;
 }
-section#box2 .content-box2 .list-box2 ul li:last-child{
+section#box2 .content-box2 .list-box2 ul li:last-child, section#box4 .list-box2 ul li:last-child{
     margin-right: 0;
 }
-section#box2 .content-box2 .list-box2 ul li a .detail{
+section#box2 .content-box2 .list-box2 ul li a .detail, section#box4 .list-box2 ul li a .detail{
     text-align: center;
     border: 1px solid #000;
     padding: 5px 0px;
@@ -358,11 +366,11 @@ section#box2 .content-box2 .list-box2 ul li a .detail{
     margin-top: 8px;
     transition: all .2s ease-in;
 }
-section#box2 .content-box2 .list-box2 ul li a .detail:hover{
+section#box2 .content-box2 .list-box2 ul li a .detail:hover, section#box4 .list-box2 ul li a .detail:hover{
     background: #000;
     color: #ffffff;
 }
-section#box2 .content-box2 .list-box2 ul li a{
+section#box2 .content-box2 .list-box2 ul li a, section#box4 .list-box2 ul li a {
     color: #000000;
 }
 section#box2 .content-box2  .show-more{
@@ -444,4 +452,269 @@ ul.list-ft li img{
     text-align: center;
     color: #ffffff;
     padding: 22px 0 30px 0;
+}
+
+/*================ * pageDetail * ===============*/
+
+/*=========== wrapp-header ===========*/
+nav.box-shadow{
+    box-shadow: 0px 20px 37px -37px #000;
+    z-index: 9999999;
+    background: #ffffff;
+}
+
+/*=========== wrapp-content ===========*/
+main#wrapp-content .category{
+    margin: 26px 0 50px 0;
+}
+main#wrapp-content .category a{
+    color: #333;
+}
+section#box3{
+    display: flex;
+}
+section#box3 .slide-image{
+    flex-basis: 55%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 14px;
+}
+section#box3 .slide-image .select-image{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 16%;
+    padding-top: 55px;
+    margin-right: 14px;
+}
+section#box3 .slide-image .select-image .item-image{
+    max-height: 104px;
+    margin-top: 37px;
+    position: relative;
+}
+section#box3 .slide-image .select-image .item-image:nth-child(3){
+    margin-top: 96px;
+}
+section#box3 .slide-image .select-image .item-image:nth-child(3):before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 77%;
+    height: 1px;
+    transform: rotate(90deg);
+    z-index: 99999999;
+    background: #000;
+    top: -48px;
+    left: 11%;
+}
+section#box3 .slide-image .image-show{
+    height: 537px;
+}
+section#box3 .slide-image .select-image .item-image img, section#box3 .slide-image .image-show img{
+    width: 100%;
+    height: 100%;
+}
+section#box3 .slide-image .image-show .dot-select{
+    text-align: center;
+}
+section#box3 .slide-image .image-show .dot-select .dotImg{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid #3d3d3d;
+    margin-right: 10px;
+}
+section#box3 .slide-image .image-show .dot-select .dotImg.active{
+    background: #3d3d3d;
+}
+section#box3 .content-image{
+    flex-basis: 60%;
+    position: relative;
+    padding-top: 49px;
+}
+section#box3 .content-image .description{
+    display: inline-block;
+    width: 41%;
+    position: relative;
+    padding: 0px 26px;
+    margin-right: 21px;
+}
+section#box3 .content-image .info-item{
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    vertical-align: top;
+}
+section#box3 .content-image .shadow{
+    position: absolute;
+    width: 42%;
+    height: 82%;
+    background: #f1f1f1;
+    top: 0;
+}
+section#box3 .content-image h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 34px;
+    color: #353535;
+    border-top: 1px solid #353535;
+    margin: 0 90px;
+    position: relative;
+    margin-bottom: 20px;
+}
+section#box3 .content-image h4{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 26px;
+}
+section#box3 .content-image .description p{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+section#box3 .content-image .info-item span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 27px;
+}
+section#box3 .content-image .info-item .select-color{
+    margin: 24px 0;
+}
+section#box3 .content-image .info-item .total{
+    margin: 33px 0;
+}
+section#box3 .content-image .info-item .select-color span, section#box3 .content-image .info-item .select-size span, section#box3 .content-image .info-item .total span{
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 0;
+}
+section#box3 .content-image .info-item .select-color ul, section#box3 .content-image .info-item .select-size ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 19px;
+}
+section#box3 .content-image .info-item .select-color ul li {
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    border: 1px solid #000;
+    margin-right: 54px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+section#box3 .content-image .info-item .select-color ul li.active{
+    border: 4px solid #353535;
+}
+.trang{
+    background: #ffffff;
+}
+.den{
+    background: #000000;
+}
+.do{
+    background: #9e0b0f;
+}
+section#box3 .content-image .info-item .select-size ul li{
+    display: inline-block;
+    width: 52px;
+    height: 23px;
+    border: 1px solid;
+    margin-right: 22px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 21px;
+}
+section#box3 .content-image .info-item .select-size ul li.active{
+    background: #464646;
+    color: #ffffff;
+}
+section#box3 .content-image .info-item .total .form-total{
+    display: inline-block;
+    width: 64%;
+}
+section#box3 .content-image .info-item .total .form-total input{
+    display: inline-block;
+    width: 19%;
+    height: 25px;
+    margin-right: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+section#box3 .content-image .info-item .total .form-total button{
+    padding: 7px 16px;
+    color: #fff;
+    background: #9e0b0f;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+section#box3 .content-image .info-item .sale input{
+    outline: 0;
+    outline-style: none;
+    outline-width: 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 81%;
+    border-bottom: 1px solid;
+    color: #000;
+    font-size: 14px;
+    padding-left: 4px;
+}
+section#box3 .content-image .info-item .sale button{
+    width: 47%;
+    margin: 10px 56px;
+    background: no-repeat;
+    border: 1px solid #9e0b0f;
+    color: #9e0b0f;
+    font-size: 22px;
+    padding: 5px 18px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+section#box3 .content-image .info-item .sale button:hover{
+    background: #9e0b0f;
+    color: #ffffff;
+}
+section#box3 .content-image .info-item .contact{
+    margin: 24px 0 0 24px;
+}
+section#box3 .content-image .info-item .contact img, section#box3 .content-image .info-item .contact .phone{
+    display: inline-block;
+    vertical-align: top;
+}
+section#box3 .content-image .info-item .contact .phone p{
+    font-size: 13px;
+}
+section#box3 .content-image .info-item .contact .phone .phone-number{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*======= box 4 ========*/
+section#box4{
+    margin-top: 130px ;
+}
+section#box4 .same-item{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 190px;
+}
+section#box4 .same-item::after, section#box4 .same-item::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 1px;
+    background: #000000;
+    bottom: 11px;
+}
+section#box4 .same-item::before{
+    width: 13%;
+    left: 0;
+}
+section#box4 .same-item::after{
+    width: 70%;
+    right: 0;
 }

@@ -8,20 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link media="all" type="text/css" rel="stylesheet" href="css/site.css" />
-
-    <!-----javascript------>
-    <script src="js/site.js"></script>
 </head>
 <body>
 <header id="wrapp-header" class="">
     <div class="container">
-        <nav class="menu-header">
+        <nav class="menu-header box-shadow">
             <section class="logo">
                 <a href="#">
-                    <img src="./img/logl.png" alt="">
+                    <img src="./img/logo-detail.png" alt="">
                 </a>
             </section>
-            <section class="list">
+            <section class="list color-text-black">
                 <ul>
                     <li>
                         <a href="">Hàng mới về</a>
@@ -51,5 +48,168 @@
         </nav>
     </div>
 </header>
+<main id="wrapp-content">
+    <div class="container">
+        <p class="category">
+            <a href="">Trang chủ</a>
+            <span> > <a href=""> Áo</a> > </span>
+            <span>A 003</span>
+        </p>
+        <!------ # box 3 -------->
+        <section id="box3">
+            <div class="slide-image">
+                <div class="select-image">
+                    <div class="item-image active" onmouseover="imgShow(0)" data="./img/anh1.png">
+                        <img src="./img/anh1.png" alt="">
+                    </div>
+                    <div class="item-image" onmouseover="imgShow(1)" data="./img/anh2.png">
+                        <img src="./img/anh2.png" alt="">
+                    </div>
+                    <div class="item-image" onmouseover="imgShow(2)" data="./img/anh3.png">
+                        <img src="./img/anh3.png" alt="">
+                    </div>
+                </div>
+                <div class="image-show">
+                    <img id="showImg" src="./img/anh1.png" alt="">
+                    <div class="dot-select">
+                        <span class="dotImg active" onclick="imgShow(0)" data="./img/anh1.png"></span>
+                        <span class="dotImg " onclick="imgShow(1)" data="./img/anh2.png"></span>
+                        <span class="dotImg " onclick="imgShow(2)" data="./img/anh3.png"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-image">
+                <div class="shadow"></div>
+                <h3>Sơ mi trắng thêu hoa</h3>
+                <h4>Mô tả</h4>
+                <div class="description">
+                    <p>Miêu tả: Áo kiểu tay ngắn nhún thun ở tay, cổ tay phối khoen tròn.</p>
+                    <p>Size: S/M.</p>
+                    <p>Đặc tính: Thanh lịch, hiện đại.</p>
+                    <p>Thể loại: Trang phục công sở.</p>
+                    <p>Màu sắc: Đen  - Xanh.</p>
+                    <p>Chất liệu: Bố sớ xọc.</p>
+                    <p>Số đo mẫu nữ: Chiều cao: 175 cm. Số đo 3 vòng: 86 - 61 - 90.</p>
+                </div>
+                <div class="info-item">
+                    <p>Mã: <span>M 454</span></p>
+                    <div class="select-color">
+                        <span>Màu:</span>
+                        <ul>
+                            <li class="trang color active" onclick="selectColor(0)"></li>
+                            <li class="den color" onclick="selectColor(1)"></li>
+                            <li class="do color" onclick="selectColor(2)"></li>
+                        </ul>
+                    </div>
+                    <div class="select-size">
+                        <span>Size:</span>
+                        <ul>
+                            <li class="s size active" onclick="selectSize(0)">S</li>
+                            <li class="m size" onclick="selectSize(1)">M</li>
+                            <li class="l size" onclick="selectSize(2)">L</li>
+                        </ul>
+                    </div>
+                    <div class="total">
+                        <span>Số lượng:</span>
+                        <form action="" method="post" class="form-total">
+                            <input type="text" value="1">
+                            <button type="submit">Thêm vào giỏ</button>
+                        </form>
+                    </div>
+                    <form action="#" method="post" class="sale">
+                        <input type="text" placeholder="Nhập mã giảm giá">
+                        <button type="submit">Mua ngay</button>
+                    </form>
+                    <div class="contact">
+                        <img src="./img/phone.png" alt="">
+                        <div class="phone">
+                            <p>Tổng đài hỗ trợ</p>
+                            <p class="phone-number">0969 301 474</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------ # box 4 --------->
+        <section id="box4">
+            <h3 class="same-item">Sản phẩm liên quan</h3>
+            <div class="list-box2">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./img/anh7.png" alt="">
+                            <p class="detail">Chi tiết</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/anh6.png" alt="">
+                            <p class="detail">Chi tiết</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/anh4.png" alt="">
+                            <p class="detail">Chi tiết</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/anh5.png" alt="">
+                            <p class="detail">Chi tiết</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--------footer---------->
+<footer id="wrapp-footer">
+    <section class="container">
+        <ul class="list-ft">
+            <li>
+                <h3>Giới thiệu</h3>
+                <p>ROSARA là thương hiệu thời trang thiết kế độc quyền dành cho những người phụ nữ trẻ tự tin, yêu thích sự đơn giản, sống sâu sắc và trân trọng giá trị bản thân.</p>
+                <p>
+                    Với các sản phẩm được thai nghén từ đội ngũ thiết kế trẻ có gout thời trang tinh tế, nắm bắt xu hướng nhanh nhạy, với nguồn nguyên phụ liệu được kiểm soát chặt chẽ cùng quy trình kiểm định chất
+                    lượng nghiêm ngặt, chúng tôi tự tin mang đến cho khách hàng những sản phẩm có chất lượng cao và giá thành tốt nhất
+                </p>
+            </li>
+            <li>
+                <h3>Hỗ trợ</h3>
+                <a href="" class="dp">Câu hỏi thường găp</a>
+                <a href="" class="dp">Chính sách bảo mật thông tin</a>
+                <a href="" class="dp">Cách thức mua hàng</a>
+                <a href="" class="dp">Thanh toán</a>
+                <a href="" class="dp">Vận chuyển</a>
+                <a href="" class="dp">Quy định trả hàng</a>
+                <a href="" class="dp">Hướn dẫn chọn size</a>
+            </li>
+            <li>
+                <h3>Đăng ký nhận tin</h3>
+                <form action="#" method="post">
+                    <input type="text" class="mail" placeholder="Nhập email của bạn">
+                </form>
+                <p>Hãy nhập email của bạn vào đây để nhận tin!</p>
+                <p class="connect">Kết nối ngay với ROSARA</p>
+                <img src="./img/insta.png" alt="">
+                <img src="./img/youtube.png" alt="">
+                <img src="./img/fb.png" alt="">
+            </li>
+        </ul>
+    </section>
+    <section id="copy">
+        <div class="container">
+            <p>&copy; Copyright Rosara Việt Nam - Thế giới thời trang nữ.</p>
+        </div>
+    </section>
+</footer>
+
 </body>
+
+<!-----javascript------>
+<script src="js/site.js"></script>
 </html>
