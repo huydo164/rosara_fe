@@ -32,7 +32,7 @@ function prev(){
 
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
-        var menu = document.querySelectorAll('header#wrapp-header');
+        var menu = document.querySelectorAll('header#wrap-header');
         var menu = menu[0];
         var chieucao = pageYOffset;
         if (chieucao  > 100){
