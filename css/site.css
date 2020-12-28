@@ -701,6 +701,7 @@ section#box4 .same-item{
     font-weight: bold;
     position: relative;
     padding-left: 190px;
+    margin-bottom: 34px;
 }
 section#box4 .same-item::after, section#box4 .same-item::before{
     content: "";

@@ -80,6 +80,7 @@ function selectSize(n) {
     size[n].className += " active"
 }
 
+
 function validateForm() {
     var amount = document.getElementById('amount').value;
     if (amount == '' ){
@@ -95,5 +96,4 @@ function validateForm() {
         return true;
     }
 }
-
 validateForm();
