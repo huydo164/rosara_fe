@@ -1,26 +1,33 @@
 
-var slideIndex;
-function slideShow() {
-    var i;
-    var slide = document.getElementsByClassName("slide-show");
+function slideShow(n) {
+    var slide = document.getElementsByClassName('slide-show');
     var dot = document.getElementsByClassName("dot");
-    for (i = 0; i < slide.length; i++){
+    for (var i = 0; i < slide.length; i++){
         slide[i].style.display = "none";
     }
-    for (i = 0; i < dot.length; i++){
+    for (var i = 0; i < dot.length; i++){
         dot[i].classList = dot[i].className.replace(" active", "");
     }
-    slide[slideIndex].style.display = "block";
-    dot[slideIndex].className += " active";
-    slideIndex++;
-    if (slideIndex > slide.length - 1){
-        slideIndex = 0;
-    }
+    slide[n].style.display = "block";
+    dot[n].className += " active";
 }
-slideShow(slideIndex = 0);
 
-function currentSlide(n){
-    slideShow(slideIndex = n)
+slideShow(0);
+var numberSlide = 0;
+function next(){
+
+    numberSlide++
+    if (numberSlide > 1){
+        numberSlide = 0;
+    }
+    slideShow(numberSlide)
+}
+function prev(){
+    numberSlide--;
+    if (numberSlide < 0){
+        numberSlide = 1;
+    }
+    slideShow(numberSlide)
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function imgShow(n) {
     var img = document.getElementsByClassName("item-image");
     var dot = document.getElementsByClassName("dotImg");
-    var itemShow = document.getElementsByClassName("image-show")
 
     for (var i = 0; i < img.length; i++){
         img[i].classList = img[i].className.replace(" active", "");
@@ -73,3 +79,21 @@ function selectSize(n) {
     }
     size[n].className += " active"
 }
+
+function validateForm() {
+    var amount = document.getElementById('amount').value;
+    if (amount == '' ){
+        alert('bạn chưa nhập số lượng');
+        return false
+    }
+    if (isNaN(amount)){
+        alert('dữ liệu nhập vào phải là số');
+        return false;
+    }
+    else{
+        alert('Dữ liệu thêm thành công');
+        return true;
+    }
+}
+
+validateForm();

@@ -57,7 +57,7 @@
         </p>
         <!------ # box 3 -------->
         <section id="box3">
-            <div class="slide-image">
+                <div class="slide-image">
                 <div class="select-image">
                     <div class="item-image active" onmouseover="imgShow(0)" data="./img/anh1.png">
                         <img src="./img/anh1.png" alt="">
@@ -111,8 +111,8 @@
                     </div>
                     <div class="total">
                         <span>Số lượng:</span>
-                        <form action="" method="post" class="form-total">
-                            <input type="text" value="1">
+                        <form action="" method="post" class="form-total" onsubmit="return validateForm()">
+                            <input type="text" id="amount" value="">
                             <button type="submit">Thêm vào giỏ</button>
                         </form>
                     </div>
