@@ -351,9 +351,9 @@ section#box2 .mo2{
 section#box2 .content-box2{
     position: relative;
 }
-section#box2 .content-box2 ul li, section#box4 .list-box2 ul li{
-    display: inline-block;
-    margin-right: 93px;
+section#box2 .content-box2 .list-box2 , section#box4 .list-box2 ul {
+    display: flex;
+    justify-content: space-between;
 }
 section#box2 .content-box2 .list-box2 ul li:last-child, section#box4 .list-box2 ul li:last-child{
     margin-right: 0;
