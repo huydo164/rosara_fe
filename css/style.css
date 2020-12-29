@@ -6,11 +6,10 @@
     text-decoration: none;
 }
 
-html,body{
-    background: #8c8c8c;
+body{
+    background: #fff;
     font-family: Roboto-Light;
     font-size: 15px;
-    height: 100%;
     position: relative;
 }
 @font-face{font-family: "Roboto-Light"; src: url("./font/Roboto-Light.otf") format("truetype");}
@@ -196,8 +195,6 @@ section#wrap-banner .slide .active, .dot:hover {
 
 #wrap-content{
     background: #ffffff;
-    padding: 130px 0;
-    min-height: 100%;
 }
 section#box1 .gach{
     height: 1px;
@@ -206,7 +203,7 @@ section#box1 .gach{
     margin-bottom: 100px;
 }
 section#box1{
-    margin-bottom: 178px;
+    padding: 130px 0 214px 0;
     position: relative;
 }
 section#box1 .title-box1{
@@ -314,7 +311,7 @@ section#box1 .box-shadow{
     width: 92%;
     height: 458px;
     left: -35%;
-    top: 30%;
+    top: 34%;
 }
 section#box1 .content-box1 .list-img ul li a .shadow{
     position: absolute;
@@ -326,13 +323,14 @@ section#box1 .content-box1 .list-img ul li a .shadow{
 }
 
 /*============box 2 =============*/
-#box2{
+section#box2{
     position: relative;
+    padding-bottom: 130px;
 }
 section#box2 .title-box2{
     border-top: 1px solid;
     text-align: center;
-    margin: 0 34% 40px 34%;
+    margin: 0 34% 47px 34%;
     font-weight: bold;
     font-size: 22px;
     line-height: 40px;
@@ -340,9 +338,9 @@ section#box2 .title-box2{
 section#box2 .box-shadow{
     position: absolute;
     width: 100%;
-    height: 63%;
+    height: 53%;
     background: #f0f0f0;
-    top: 28%;
+    top: 22%;
 }
 section#box2 .content-box2{
     position: relative;
@@ -370,7 +368,7 @@ section#box2 .content-box2 .list-box2 ul li a, section#box4 .list-box2 ul li a {
     color: #000000;
 }
 section#box2 .content-box2 .list-box2{
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 section#box2 .content-box2  .show-more{
     background: #3d3d3d;

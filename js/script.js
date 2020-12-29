@@ -1,6 +1,3 @@
-
-
-
 function slideShow(n) {
     var slide = document.getElementsByClassName('slide-show');
     var dot = document.getElementsByClassName("dot");
@@ -97,4 +94,24 @@ function validateForm() {
         alert('Dữ liệu thêm thành công');
         return true;
     }
+}
+
+function zoomWindow() {
+    var height = document.documentElement.clientHeight;
+    var h = document.getElementById("wrap-banner").offsetHeight;
+    var c = document.getElementById("wrap-content").offsetHeight;
+    var f = document.getElementById("wrap-footer").offsetHeight;
+
+    var b = document.getElementById('wrap-footer');
+
+    var totalHeight = h + c + f;
+    console.log(totalHeight);
+    console.log(height);
+    if (height > totalHeight){
+        b.classList.add('abc');
+    }
+}
+zoomWindow();
+window.onresize = function () {
+    zoomWindow();
 }
