@@ -105,10 +105,11 @@ function zoomWindow() {
     var b = document.getElementById('wrap-footer');
 
     var totalHeight = h + c + f;
-    console.log(totalHeight);
-    console.log(height);
     if (height > totalHeight){
-        b.classList.add('abc');
+        b.classList.add('bottom');
+    }
+    else{
+        b.classList.remove('bottom');
     }
 }
 zoomWindow();

@@ -10,7 +10,6 @@ body{
     background: #fff;
     font-family: Roboto-Light;
     font-size: 15px;
-    position: relative;
 }
 @font-face{font-family: "Roboto-Light"; src: url("./font/Roboto-Light.otf") format("truetype");}
 .container{
@@ -660,6 +659,10 @@ section#box4 .same-item::after{
     background: #565656;
     padding-top: 80px;
     width: 100%;
+}
+footer#wrap-footer.bottom{
+    position: absolute;
+    bottom: 0;
 }
 ul.list-ft{
     margin-bottom: 27px;
