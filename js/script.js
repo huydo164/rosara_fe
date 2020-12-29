@@ -1,47 +1,52 @@
-function slideShow(n) {
-    var slide = document.getElementsByClassName('slide-show');
-    var dot = document.getElementsByClassName("dot");
-    for (var i = 0; i < slide.length; i++){
-        slide[i].style.display = "none";
-    }
-    for (var i = 0; i < dot.length; i++){
-        dot[i].classList = dot[i].className.replace(" active", "");
-    }
-    slide[n].style.display = "block";
-    dot[n].className += " active";
-}
-
-slideShow(0);
-var numberSlide = 0;
-function next(){
-
-    numberSlide++
-    if (numberSlide > 1){
-        numberSlide = 0;
-    }
-    slideShow(numberSlide)
-}
-function prev(){
-    numberSlide--;
-    if (numberSlide < 0){
-        numberSlide = 1;
-    }
-    slideShow(numberSlide)
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("scroll", function () {
-        var menu = document.querySelectorAll('header#wrap-header');
-        var menu = menu[0];
-        var chieucao = pageYOffset;
-        if (chieucao  > 100){
-            menu.classList.add("bg-menu")
+if(document.getElementsByClassName("slide").length > 0){
+    function slideShow(n) {
+        var slide = document.getElementsByClassName('slide-show');
+        var dot = document.getElementsByClassName("dot");
+        for (var i = 0; i < slide.length; i++){
+            slide[i].style.display = "none";
         }
-        else{
-            menu.classList.remove('bg-menu');
+        for (var i = 0; i < dot.length; i++){
+            dot[i].classList = dot[i].className.replace(" active", "");
         }
+        slide[n].style.display = "block";
+        dot[n].className += " active";
+    }
+
+    slideShow(0);
+    var numberSlide = 0;
+    function next(){
+
+        numberSlide++
+        if (numberSlide > 1){
+            numberSlide = 0;
+        }
+        slideShow(numberSlide)
+    }
+    function prev(){
+        numberSlide--;
+        if (numberSlide < 0){
+            numberSlide = 1;
+        }
+        slideShow(numberSlide)
+    }
+}
+
+if (document.querySelector("header#wrap-header.box-shadow") == undefined){
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            var menu = document.querySelectorAll('header#wrap-header');
+            var menu = menu[0];
+            var chieucao = pageYOffset;
+            if (chieucao  > 100){
+                menu.classList.add("bg-menu")
+            }
+            else{
+                menu.classList.remove('bg-menu');
+            }
+        })
     })
-})
+
+}
 
 function imgShow(n) {
     var img = document.getElementsByClassName("item-image");
@@ -96,15 +101,23 @@ function validateForm() {
     }
 }
 
+
+
 function zoomWindow() {
-    var height = document.documentElement.clientHeight;
-    var h = document.getElementById("wrap-banner").offsetHeight;
-    var c = document.getElementById("wrap-content").offsetHeight;
-    var f = document.getElementById("wrap-footer").offsetHeight;
+    let height = document.documentElement.clientHeight;
+    let c = document.getElementById("wrap-content").offsetHeight;
+    let f = document.getElementById("wrap-footer").offsetHeight;
+    let b = document.getElementById('wrap-footer');
+    let totalHeight;
 
-    var b = document.getElementById('wrap-footer');
-
-    var totalHeight = h + c + f;
+    if (document.getElementById("wrap-banner")){
+        let h = document.getElementById("wrap-banner").offsetHeight;
+        totalHeight = h + c + f;
+    }
+    if (document.getElementById("wrap-header")){
+        let h = document.getElementById("wrap-header").offsetHeight;
+        totalHeight = h + c + f;
+    }
     if (height > totalHeight){
         b.classList.add('bottom');
     }
@@ -116,3 +129,4 @@ zoomWindow();
 window.onresize = function () {
     zoomWindow();
 }
+

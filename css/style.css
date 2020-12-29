@@ -398,7 +398,7 @@ nav.box-shadow{
 
 /*=========== wrap-content ===========*/
 main#wrap-content .category{
-    padding: 26px 0 50px 0;
+    padding: 140px 0 50px 0;
 }
 main#wrap-content .category span:nth-child(2), main#wrap-content .category span:nth-child(2) a{
     margin: 0 10px;
@@ -628,7 +628,7 @@ section#box3 .content-image .info-item .contact .phone .phone-number{
 
 /*======= box 4 ========*/
 section#box4{
-    margin-top: 130px ;
+    padding: 130px 0 ;
 }
 section#box4 .same-item{
     font-size: 20px;
