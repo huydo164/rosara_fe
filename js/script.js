@@ -1,4 +1,6 @@
 
+
+
 function slideShow(n) {
     var slide = document.getElementsByClassName('slide-show');
     var dot = document.getElementsByClassName("dot");
@@ -96,4 +98,3 @@ function validateForm() {
         return true;
     }
 }
-validateForm();
