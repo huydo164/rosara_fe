@@ -101,8 +101,6 @@ function validateForm() {
     }
 }
 
-
-
 function zoomWindow() {
     let height = document.documentElement.clientHeight;
     let c = document.getElementById("wrap-content").offsetHeight;
@@ -110,14 +108,11 @@ function zoomWindow() {
     let b = document.getElementById('wrap-footer');
     let totalHeight;
 
-    if (document.getElementById("wrap-banner")){
-        let h = document.getElementById("wrap-banner").offsetHeight;
-        totalHeight = h + c + f;
-    }
-    if (document.getElementById("wrap-header")){
-        let h = document.getElementById("wrap-header").offsetHeight;
-        totalHeight = h + c + f;
-    }
+    let banner = document.getElementById("wrap-banner");
+    let header = document.getElementById("wrap-header");
+    let h = banner === null ? header.offsetHeight : banner.offsetHeight;
+    totalHeight = h + c+ f
+
     if (height > totalHeight){
         b.classList.add('bottom');
     }
