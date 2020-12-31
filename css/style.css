@@ -20,6 +20,7 @@ body{
 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 /*============== header =============*/
 header#wrap-header{
@@ -52,11 +53,13 @@ header#wrap-header.bg-menu{
     width: 100%;
     flex-wrap: nowrap;
 }
-.logo{
+section.logo{
     margin-right: 35%;
+    position: relative;
+    bottom: 11px;
 }
 section.logo img{
-    height: 76%;
+    object-fit: contain;
 }
 .list{
     flex-grow: 1;
@@ -137,10 +140,6 @@ section#wrap-banner .slide{
 }
 section#wrap-banner .slide .slide-show{
     width: 100%;
-}
-section#wrap-banner .slide .slide-show img {
-    width: 100%;
-    height: 100%;
 }
 section#wrap-banner .slide .slide-show .text{
     position: absolute;
@@ -358,8 +357,8 @@ section#box2 .content-box2 .list-box2 ul , section#box4 .list-box2 ul {
     display: flex;
     justify-content: space-between;
 }
-section#box2 .list-box2 ul li img, section#box4 .list-box2 ul li img{
-    height: 88%;
+section#box2 .list-box2 ul li , section#box4 .list-box2 ul li {
+    height: 90%;
 }
 section#box2 .content-box2 .list-box2 ul li:last-child, section#box4 .list-box2 ul li:last-child{
     margin-right: 0;
@@ -432,35 +431,32 @@ section#box3 .slide-image .select-image{
     display: flex;
     flex-direction: column;
     flex-basis: 17%;
-    padding-top: 50px;
     margin-right: 14px;
+    justify-content: center;
+    padding-top: 15px;
 }
 section#box3 .slide-image .select-image .item-image{
-    max-height: 100px;
     margin-top: 10px;
     position: relative;
+    height: 110px;
 }
 section#box3 .slide-image .select-image .item-image:nth-child(3){
-    margin-top: 96px;
+    margin-top: 70px;
 }
 section#box3 .slide-image .select-image .item-image:nth-child(3):before{
     content: "";
     display: block;
     position: absolute;
-    width: 77%;
+    width: 45%;
     height: 1px;
     transform: rotate(90deg);
     z-index: 99999999;
     background: #000;
-    top: -48px;
-    left: 11%;
+    top: -35px;
+    left: 26%;
 }
 section#box3 .slide-image .image-show{
-    width: 67%;
-}
-section#box3 .slide-image .select-image .item-image img, section#box3 .slide-image .image-show img{
-    width: 100%;
-    height: 100%;
+    width: 65%;
 }
 section#box3 .slide-image .image-show .dot-select{
     text-align: center;
@@ -682,36 +678,36 @@ footer#wrap-footer.bottom{
     position: absolute;
     bottom: 0;
 }
-ul.list-ft{
+footer#wrap-footer ul.list-ft{
     margin-bottom: 27px;
     display: flex;
 }
-ul.list-ft li{
+footer#wrap-footer ul.list-ft li{
     color: #ffffff;
     margin-right: 74px;
     flex-basis: 39%;
 }
-ul.list-ft li:nth-child(2){
+footer#wrap-footer ul.list-ft li:nth-child(2){
     flex-basis: 18%;
 }
-ul.list-ft li:nth-child(2) a{
+footer#wrap-footer ul.list-ft li:nth-child(2) a{
     display: block;
     color: #fff;
     line-height: 27px;
 }
-ul.list-ft li:nth-child(3){
+footer#wrap-footer ul.list-ft li:nth-child(3){
     flex-basis: 29%;
     margin-right: 0;
 }
-ul.list-ft li h3{
+footer#wrap-footer ul.list-ft li h3{
     font-weight: bold;
     margin-bottom: 19px;
     font-size: 27px;
 }
-ul.list-ft li p{
+footer#wrap-footer ul.list-ft li p{
     margin-bottom: 17px;
 }
-ul.list-ft li input.mail, ul.list-ft li input.mail:active, ul.list-ft li input.mail:focus{
+footer#wrap-footer ul.list-ft li input.mail, ul.list-ft li input.mail:active, ul.list-ft li input.mail:focus{
     outline: 0;
     outline-style: none;
     outline-width: 0;
@@ -720,23 +716,24 @@ ul.list-ft li input.mail, ul.list-ft li input.mail:active, ul.list-ft li input.m
     border-bottom: 1px solid #fff;
     color: #fff;
     margin: 23px 0;
-    width: 100%;
+    width: 85%;
     padding-left: 17px;
     font-size: 15px;
 }
-ul.list-ft li input.mail::placeholder{
+footer#wrap-footer ul.list-ft li input.mail::placeholder{
     color: #fff;
     opacity: 1;
 }
-ul.list-ft li .connect{
+footer#wrap-footer ul.list-ft li .connect{
     display: inline-block;
     text-transform: uppercase;
 }
-ul.list-ft li img{
-    margin-left: 13px;
-    cursor: pointer;
-    width: 6%;
-    height: 8%;
+footer#wrap-footer ul.list-ft li .social-network, footer#wrap-footer ul.list-ft li .social-network li{
+    display: inline-block;
+    cursor: pointer ;
+    margin-right: 0;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 #copy{
     background: #3d3d3d;
@@ -745,167 +742,3 @@ ul.list-ft li img{
     padding: 22px 0 30px 0;
 }
 
-
-/*======================== responsive ===========================*/
-@media (max-width: 1200px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .container{
-        width: 970px;
-        padding : 0 26px;
-    }
-    header#wrap-header nav.menu-header{
-        padding-top: 18px;
-    }
-    section.logo{
-        margin-right: 20%;
-    }
-    section.list{
-        flex-basis: 54%;
-        flex-grow: 0;
-    }
-    section.icon-web{
-        margin-left: 30px;
-        flex-basis: 12%;
-    }
-    section#wrap-banner .best{
-        top: 31%;
-        left: 55%;
-        font-size: 84px;
-    }
-    section#wrap-banner .slide{
-        margin-left: 116px;
-        bottom: 235px;
-    }
-    section#wrap-banner .slide .icon-click{
-        right: -21%;
-        bottom: 54%;
-    }
-    section#wrap-banner .slide .slide-show{
-        width: 81%;
-    }
-    section#wrap-banner .slide .slide-show .text{
-        right: -39%;
-    }
-    section#wrap-banner .slide .slide-show .text .bold{
-        font-size: 38px;
-    }
-    section#wrap-banner .image-small{
-        top: 13%;
-    }
-    section#box1 .title-box1{
-        margin-left: 80px;
-    }
-    section#box1 .content-box1 .list-img ul li, section#box2 .content-box2 .list-box2 ul li, section#box4 .list-box2 ul li{
-        margin-right: 21px;
-    }
-    section#box2 .content-box2 .list-box2 ul li img, section#box4 .list-box2 ul li img{
-        height: 88%;
-    }
-    section#box1 .content-box1 .list-img ul li.rosara{
-        margin-right: 0;
-        left: 17%;
-    }
-    section#box1 .content-box1 .list-img ul li a p.not-pd{
-        padding-top: 0px;
-    }
-    section#box2 .content-box2 .list-box2{
-        padding-bottom: 33px;
-    }
-    section#box2 .box-shadow{
-        height: 51%;
-    }
-
-    /*============ pageDetail =============*/
-    section#box3{
-        flex-wrap: wrap;
-    }
-    section#box3 .slide-image{
-        flex-basis: 100%;
-        justify-content: center;
-        margin-right: 0;
-    }
-    section#box3 .slide-image .select-image{
-        flex-basis: 18%;
-        padding-top: 34px;
-    }
-    section#box3 .slide-image .select-image .item-image{
-        max-height: 96px;
-        text-align: right;
-    }
-    section#box3 .slide-image .select-image .item-image:nth-child(3)::before {
-        width: 36%;
-        left: 52%;
-    }
-    section#box3 .slide-image .select-image .item-image img{
-        width: 60%;
-    }
-    section#box3 .slide-image .image-show{
-        width: 40%;
-    }
-    section#box3 .content-image h3{
-        font-size: 29px;
-        margin: 0 140px 13px 140px;
-    }
-    section#box3 .content-image .info-item .sale button{
-        width: 51%;
-        margin: 10px 99px;
-    }
-    section#box3 .content-image{
-        margin-top: 100px;
-        flex-basis: 100%;
-    }
-    section#box3 .content-image .shadow{
-        width: 52%;
-    }
-    section#box3 .content-image h4{
-        margin-bottom: 12px;
-        padding-left: 30px;
-    }
-    section#box3 .content-image .description{
-        width: 51%;
-        padding: 0px 30px;
-    }
-    section#box3 .content-image .info-item{
-        width: 47%;
-        padding-left: 45px;
-    }
-    section#box4 .same-item{
-        padding-left: 137px;
-    }
-    footer#wrap-footer ul.list-ft li{
-        margin-right: 60px;
-    }
-    footer#wrap-footer ul.list-ft li:nth-child(2) a{
-        padding-bottom: 10px;
-        line-height: normal;
-    }
-    footer#wrap-footer ul.list-ft li:nth-child(3){
-        margin-right: 0;
-        flex-basis: 34%;
-    }
-    footer#wrap-footer ul.list-ft li img{
-        height: 7%;
-    }
-    section#box3 .content-image .info-item .total{
-        margin: 35px 0;
-    }
-    section#box3 .content-image .info-item .contact{
-        text-align: center;
-    }
-    section#box3 .content-image .info-item .contact img{
-        width: 9%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .container{
-        width: 900px;
-    }
-}
-
-@media (max-width: 768px) {
-    
-}
