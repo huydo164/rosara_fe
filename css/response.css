@@ -15,9 +15,16 @@
     section.list{
         flex-basis: 54%;
     }
+    section.list ul li{
+        line-height: 30px;
+    }
+    section.list ul li .sub-menu li{
+        line-height: normal;
+    }
     section.icon-web{
         margin-left: 30px;
         flex-basis: 12%;
+        padding-top: 5px;
     }
     section#wrap-banner .best{
         top: 31%;
@@ -124,6 +131,9 @@
     section#box3 .content-image .info-item{
         width: 45%;
         padding-left: 45px;
+    }
+    section#box3 .slide-image .select-image .item-image{
+        height: 95px;
     }
     section#box4 .same-item{
         padding-left: 135px;
