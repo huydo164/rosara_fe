@@ -55,6 +55,9 @@ header#wrap-header.bg-menu{
 .logo{
     margin-right: 35%;
 }
+section.logo img{
+    height: 76%;
+}
 .list{
     flex-grow: 1;
 }
@@ -109,6 +112,9 @@ section.icon-web{
 section.icon-web ul {
     display: flex;
     justify-content: space-between;
+}
+section.icon-web ul li{
+    height: 3%;
 }
 section#wrap-banner .image{
     position: relative;
@@ -352,6 +358,9 @@ section#box2 .content-box2 .list-box2 ul , section#box4 .list-box2 ul {
     display: flex;
     justify-content: space-between;
 }
+section#box2 .list-box2 ul li img, section#box4 .list-box2 ul li img{
+    height: 88%;
+}
 section#box2 .content-box2 .list-box2 ul li:last-child, section#box4 .list-box2 ul li:last-child{
     margin-right: 0;
 }
@@ -422,7 +431,7 @@ section#box3 .slide-image{
 section#box3 .slide-image .select-image{
     display: flex;
     flex-direction: column;
-    flex-basis: 15%;
+    flex-basis: 17%;
     padding-top: 50px;
     margin-right: 14px;
 }
@@ -487,7 +496,7 @@ section#box3 .content-image .info-item{
 section#box3 .content-image .shadow{
     position: absolute;
     width: 45%;
-    height: 84%;
+    height: 85%;
     background: #f1f1f1;
     top: 0;
 }
@@ -622,6 +631,9 @@ section#box3 .content-image .info-item .contact img, section#box3 .content-image
     display: inline-block;
     vertical-align: top;
 }
+section#box3 .content-image .info-item .contact img{
+    width: 13%;
+}
 section#box3 .content-image .info-item .contact .phone p{
     font-size: 13px;
 }
@@ -661,8 +673,10 @@ section#box4 .same-item::after{
 /*======== footer ========*/
 #wrap-footer{
     background: #565656;
-    padding-top: 80px;
+    padding-top: 67px;
     width: 100%;
+    text-align: justify;
+
 }
 footer#wrap-footer.bottom{
     position: absolute;
@@ -670,19 +684,15 @@ footer#wrap-footer.bottom{
 }
 ul.list-ft{
     margin-bottom: 27px;
+    display: flex;
 }
 ul.list-ft li{
-    display: inline-block;
-    width: 42%;
     color: #ffffff;
-    vertical-align: top;
-    margin-right: 71px;
-}
-ul.list-ft li:last-child{
-    margin-right: 0;
+    margin-right: 74px;
+    flex-basis: 39%;
 }
 ul.list-ft li:nth-child(2){
-    width: 18%;
+    flex-basis: 18%;
 }
 ul.list-ft li:nth-child(2) a{
     display: block;
@@ -690,7 +700,8 @@ ul.list-ft li:nth-child(2) a{
     line-height: 27px;
 }
 ul.list-ft li:nth-child(3){
-    width: 26%;
+    flex-basis: 29%;
+    margin-right: 0;
 }
 ul.list-ft li h3{
     font-weight: bold;
@@ -719,11 +730,13 @@ ul.list-ft li input.mail::placeholder{
 }
 ul.list-ft li .connect{
     display: inline-block;
+    text-transform: uppercase;
 }
 ul.list-ft li img{
     margin-left: 13px;
     cursor: pointer;
     width: 6%;
+    height: 8%;
 }
 #copy{
     background: #3d3d3d;
@@ -741,26 +754,21 @@ ul.list-ft li img{
 @media (min-width: 992px) and (max-width: 1200px) {
     .container{
         width: 970px;
-    }
-    img{
-        width: 100%;
-        height: 100%;
+        padding : 0 26px;
     }
     header#wrap-header nav.menu-header{
         padding-top: 18px;
     }
     section.logo{
-        margin-right: 30%;
+        margin-right: 20%;
     }
     section.list{
         flex-basis: 54%;
         flex-grow: 0;
     }
     section.icon-web{
-        margin-left: 20px;
-    }
-    section.icon-web ul li{
-        height: 3%;
+        margin-left: 30px;
+        flex-basis: 12%;
     }
     section#wrap-banner .best{
         top: 31%;
@@ -793,69 +801,108 @@ ul.list-ft li img{
     section#box1 .content-box1 .list-img ul li, section#box2 .content-box2 .list-box2 ul li, section#box4 .list-box2 ul li{
         margin-right: 21px;
     }
+    section#box2 .content-box2 .list-box2 ul li img, section#box4 .list-box2 ul li img{
+        height: 88%;
+    }
     section#box1 .content-box1 .list-img ul li.rosara{
         margin-right: 0;
         left: 17%;
     }
+    section#box1 .content-box1 .list-img ul li a p.not-pd{
+        padding-top: 0px;
+    }
     section#box2 .content-box2 .list-box2{
-        padding-bottom: 100px;
+        padding-bottom: 33px;
     }
-    footer#wrap-footer ul.list-ft li{
-        width: 35%;
-        margin-right: 42px;
-    }
-    footer#wrap-footer ul.list-ft li:nth-child(2){
-        width: 21%;
-    }
-    footer#wrap-footer ul.list-ft li:nth-child(3){
-        width: 30%;
+    section#box2 .box-shadow{
+        height: 51%;
     }
 
     /*============ pageDetail =============*/
+    section#box3{
+        flex-wrap: wrap;
+    }
+    section#box3 .slide-image{
+        flex-basis: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
     section#box3 .slide-image .select-image{
         flex-basis: 18%;
-        padding-top: 45px;
+        padding-top: 34px;
     }
     section#box3 .slide-image .select-image .item-image{
-        max-height: 95px;
+        max-height: 96px;
+        text-align: right;
     }
-    section#box3 .slide-image .image-show img{
-        height: 92%;
+    section#box3 .slide-image .select-image .item-image:nth-child(3)::before {
+        width: 36%;
+        left: 52%;
+    }
+    section#box3 .slide-image .select-image .item-image img{
+        width: 60%;
+    }
+    section#box3 .slide-image .image-show{
+        width: 40%;
     }
     section#box3 .content-image h3{
         font-size: 29px;
-        margin: 0 80px 13px 80px;
-    }
-    section#box3 .content-image .description p{
-        margin-bottom: 9px;
-    }
-    section#box3 .content-image .info-item .select-color ul, section#box3 .content-image .info-item .select-size ul{
-        margin-left: 24px;
-    }
-    section#box3 .content-image .info-item .select-color ul li{
-        margin-right: 41px;
-    }
-    section#box3 .content-image .info-item .select-size ul li{
-        width: 49px;
-    }
-    section#box3 .content-image .info-item .total .form-total input{
-        margin: 0 15px 0 10px;
+        margin: 0 140px 13px 140px;
     }
     section#box3 .content-image .info-item .sale button{
-        width: 70%;
-        margin: 10px 35px;
+        width: 51%;
+        margin: 10px 99px;
     }
-    section#box3 .content-image .info-item .contact img{
-        width: 16%;
+    section#box3 .content-image{
+        margin-top: 100px;
+        flex-basis: 100%;
+    }
+    section#box3 .content-image .shadow{
+        width: 52%;
+    }
+    section#box3 .content-image h4{
+        margin-bottom: 12px;
+        padding-left: 30px;
+    }
+    section#box3 .content-image .description{
+        width: 51%;
+        padding: 0px 30px;
+    }
+    section#box3 .content-image .info-item{
+        width: 47%;
+        padding-left: 45px;
     }
     section#box4 .same-item{
         padding-left: 137px;
+    }
+    footer#wrap-footer ul.list-ft li{
+        margin-right: 60px;
+    }
+    footer#wrap-footer ul.list-ft li:nth-child(2) a{
+        padding-bottom: 10px;
+        line-height: normal;
+    }
+    footer#wrap-footer ul.list-ft li:nth-child(3){
+        margin-right: 0;
+        flex-basis: 34%;
+    }
+    footer#wrap-footer ul.list-ft li img{
+        height: 7%;
+    }
+    section#box3 .content-image .info-item .total{
+        margin: 35px 0;
+    }
+    section#box3 .content-image .info-item .contact{
+        text-align: center;
+    }
+    section#box3 .content-image .info-item .contact img{
+        width: 9%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     .container{
-        width: 970px;
+        width: 900px;
     }
 }
 
