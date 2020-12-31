@@ -32,7 +32,7 @@
         font-size: 85px;
     }
     section#wrap-banner .slide{
-        margin-left: 115px;
+        margin-left: 135px;
         bottom: 235px;
     }
     section#wrap-banner .slide .icon-click{
@@ -53,8 +53,11 @@
     }
     section#box1 .box-shadow{
         width: 95%;
-        height: 415px;
+        height: 375px;
         top: 38%;
+    }
+    section#box1 .content-box1 .list-img ul li.rosara::after{
+        width: 100px;
     }
     section#box1 .title-box1{
         margin-left: 145px;
