@@ -31,7 +31,7 @@ if(document.getElementsByClassName("slide").length > 0){
     }
 }
 
-if (document.querySelector("header#wrap-header.box-shadow") == undefined){
+if (document.querySelector("header#wrap-header.box-shadow") === null){
     document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener("scroll", function () {
             var menu = document.querySelectorAll('header#wrap-header');
@@ -89,10 +89,12 @@ function validateForm() {
     var amount = document.getElementById('amount').value;
     if (amount == '' ){
         alert('bạn chưa nhập số lượng');
+        document.myForm.soluong.focus();
         return false
     }
     if (isNaN(amount)){
         alert('dữ liệu nhập vào phải là số');
+        document.myForm.soluong.focus();
         return false;
     }
     else{
